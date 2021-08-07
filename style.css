@@ -1,0 +1,127 @@
+body{
+    background: #121725;
+    font-family: 'Chivo', sans-serif;
+}
+.main-container{
+    display: inline;
+}
+.backdrop{
+    background: url("images/backdrop.jpg") #54e6af;
+    background-blend-mode: luminosity;
+    height: 45rem;
+    width: 55rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.info-container{
+    height: 35rem;
+    background: #121725;
+    width: 45rem;
+    color: white;
+    z-index: 13;
+    position: relative;
+    left: 10rem;
+    top: 10rem;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+}
+.color-title{
+    color: #54e6af;
+    font-size: 50px;
+}
+.sec-title{
+    font-size: 50px;
+    margin-top: 0px;
+}
+p{
+    margin-bottom:4rem;
+}
+.email {
+	border-radius: 30px;
+	width: 34vw;
+	height: 56px;
+	background-color: #2c344b;
+	border: none;
+	display: inline-block;
+	color: #fff;
+	padding-left: 20px;
+	font-size: 14px;
+}
+.btn-container {
+	margin: 0 auto;
+	margin-top: -52px;
+	text-align: right;
+	width: 162px;
+	height: 46px;
+}
+.btn {
+    border-radius: 30px;
+    width: 11vw;
+    height: 46px;
+    margin-left: 5.5rem;
+    background-color: #54e6af;
+    border: none;
+    font-weight: bold;
+}
+.svg-icons img {
+	padding-top: 70px;
+	padding-right: 30px;
+}
+
+@media (max-width: 480px) {
+    body{
+        background-blend-mode: luminosity;
+        background-size:cover;
+        background: url("images/backdrop.jpg")#2c344b no-repeat;
+        height: 100vh;
+        width: auto;
+        font-family: 'Chivo', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .backdrop{
+        display: none;
+
+    }
+    .info-container{
+        display: none;
+    }
+    .content{
+        display: flex;
+        background: none;
+        top: 0%;
+        left: 0%;
+        align-items: center;
+        margin-left: -8rem;
+        margin-top: 5rem;
+    }
+    .title{
+        color: #2b6458;
+        font-size: 35px;
+        margin-bottom:0.5rem;
+    }
+    .btn-container{
+        margin-top: 10px;
+    }
+    .btn{
+        border-radius: 30px;
+        width: 15rem;
+        height: 4rem;
+        margin-left: -1rem;
+        background-color: #54e6af;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .email{
+        width: 15rem;
+        height: 4rem;
+        margin-left: 1rem;
+
+    }
+}
